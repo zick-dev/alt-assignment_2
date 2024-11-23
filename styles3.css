@@ -1,0 +1,85 @@
+body {
+   margin: 0;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #333; /* Matches the dark background */
+   font-family: Arial, sans-serif;
+ }
+
+ /* Card 2*/
+ .card2 {
+   width: 400px;
+   height: 350px;
+   background: #fff;
+   border: 2px solid #000;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   border-radius: 10px;
+   position: relative;
+   padding: 20px;
+   box-sizing: border-box;
+ }
+
+ .card2-heading {
+   position: absolute;
+   top: -20px;
+   left: 20px;
+   background:rgb(245, 245, 167); 
+   color: #000;
+   font-weight: bold;
+   padding: 5px 10px;
+   border-radius: 5px;
+ }
+
+ .content_2 {
+   margin-top: 40px;
+   color: #000;
+   font-size: 14px;
+   line-height: 1.5;
+ }
+ .content_2 img {
+   width: 100%;
+   height: auto;
+ }
+
+#main{
+   position: relative;
+   width: 80%;
+   max-width: 1200px;
+ }
+ 
+ /* Navigation Bar */
+ .navbar {
+   position: absolute;
+   top: 0;
+   right: 0;
+   background-color: #333;
+   padding: 10px;
+   border-radius: 5px;
+ }
+ 
+ .navbar ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   gap: 20px;
+ }
+ 
+ .navbar ul li {
+   display: inline;
+ }
+ 
+ .navbar ul li a {
+   text-decoration: none;
+   color: white; /* White text */
+   font-size: 16px;
+   font-weight: bold;
+   transition: color 0.3s ease;
+ }
+ 
+ .navbar ul li a:hover {
+   color: #ffc107; /* Highlight color on hover */
+ }
+ 

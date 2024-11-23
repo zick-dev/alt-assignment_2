@@ -1,0 +1,153 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  position: relative; /* Allows positioning within the header */
+  background-color: #007bff;
+  padding: 10px 0;
+}
+
+.navbar {
+  position: absolute; /* Moves the navbar independently */
+  top: 10px;
+  right: 20px; /* Adjust the distance from the right edge */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px; /* Space between items */
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #111010;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+  background-color: #0056b3;
+}
+
+
+/* Main Section Styling */
+section.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.main-content {
+  text-align: center; /* Center the text */
+  margin: 0 auto; /* Center horizontally */
+  padding-top: 80px; /* Adjust padding to move downward */
+  max-width: 600px; /* Optional: Limit the content width */
+}
+
+.main-content img {
+  max-width: 100px; /* Placeholder for an image size */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.main-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Form Styling */
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.register-btn {
+  width: 100%;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Terms and Conditions */
+.form-container p {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section.main {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .main-content {
+      text-align: center;
+  }
+}
